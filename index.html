@@ -358,9 +358,10 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-2 col-md-3 col-sm-6 col-6">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-6">
 							<a
-								href="#"
+								href="https://pm.gov.uz/oz#/authorities/1/11/_info"
+								target="_blank"
 								class="mini-box"
 							>
 								<i
@@ -368,13 +369,14 @@
 										src="assets/images/work-process-item-01.png"
 										alt=""
 								/></i>
-								<strong>Xizmat</strong>
-								<span>Godard pabst prism fam cliche.</span>
+								<strong>Vazirlik</strong>
+								<span>O'zbekiston Resbulikasi IIV Virtual qabulxonasi</span>
 							</a>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6 col-6">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-6">
 							<a
-								href="#"
+								href="https://qabul.iiv.uz/"
+								target="_blank"
 								class="mini-box"
 							>
 								<i
@@ -382,13 +384,14 @@
 										src="assets/images/work-process-item-01.png"
 										alt=""
 								/></i>
-								<strong>Xizmat</strong>
-								<span>Godard pabst prism fam cliche.</span>
+								<strong>Vazirlik</strong>
+								<span>O'zbekiston Resbulikasi IIV Boshqarma qabuliga yozilish</span>
 							</a>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6 col-6">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-6">
 							<a
-								href="#"
+								href="./offers.html"
+								target="_blank"
 								class="mini-box"
 							>
 								<i
@@ -396,13 +399,14 @@
 										src="assets/images/work-process-item-01.png"
 										alt=""
 								/></i>
-								<strong>Xizmat</strong>
-								<span>Godard pabst prism fam cliche.</span>
+								<strong>Litsey</strong>
+								<span>litsey faliyatiga doir taklif va muloxazalar qoldirish</span>
 							</a>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6 col-6">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-6">
 							<a
-								href="#"
+								href="https://my.gov.uz/oz/service/259"
+								target="_blank"
 								class="mini-box"
 							>
 								<i
@@ -410,36 +414,8 @@
 										src="assets/images/work-process-item-01.png"
 										alt=""
 								/></i>
-								<strong>Xizmat</strong>
-								<span>Godard pabst prism fam cliche.</span>
-							</a>
-						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6 col-6">
-							<a
-								href="#"
-								class="mini-box"
-							>
-								<i
-									><img
-										src="assets/images/work-process-item-01.png"
-										alt=""
-								/></i>
-								<strong>Xizmat</strong>
-								<span>Godard pabst prism fam cliche.</span>
-							</a>
-						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6 col-6">
-							<a
-								href="#"
-								class="mini-box"
-							>
-								<i
-									><img
-										src="assets/images/work-process-item-01.png"
-										alt=""
-								/></i>
-								<strong>Xizmat</strong>
-								<span>Godard pabst prism fam cliche.</span>
+								<strong>MY.GOV.UZ</strong>
+								<span>Abituriyentni onlayn ro'yxatdan o'tkazish</span>
 							</a>
 						</div>
 					</div>
@@ -725,7 +701,7 @@
 												name="name"
 												type="text"
 												class="form-control"
-												id="name"
+												id="contact_name"
 												placeholder="Ism Familyangiz"
 												required=""
 											/>
@@ -734,10 +710,10 @@
 									<div class="col-lg-6 col-md-12 col-sm-12">
 										<fieldset>
 											<input
-												name="email"
-												type="email"
+												name="phone"
+												type="tel"
 												class="form-control"
-												id="email"
+												id="contact_phone"
 												placeholder="Telefon raqamingiz"
 												required=""
 											/>
@@ -749,7 +725,7 @@
 												name="message"
 												rows="6"
 												class="form-control"
-												id="message"
+												id="contact_message"
 												placeholder="Habaringiz qisqacha mazmuni"
 												required=""
 											></textarea>
@@ -758,9 +734,10 @@
 									<div class="col-lg-12">
 										<fieldset>
 											<button
-												type="submit"
+												type="button"
 												id="form-submit"
 												class="main-button"
+												onclick="passContact()"
 											>
 												Yuborish
 											</button>
@@ -770,6 +747,37 @@
 							</form>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="modals">
+			<div
+				id="custommodal__success"
+				class="custommodal"
+			>
+				<div class="custommodal__body">
+					<img
+						class="custommodal__icon"
+						src="assets/images/customs/icon-success.svg"
+						alt="success"
+					/>
+
+					<p class="custommodal__txt">Arizangiz muvaffaqiyatli jo'natildi. Tez orada bizning mutahassis siz bilan bog'lanadi</p>
+				</div>
+			</div>
+			<div
+				id="custommodal__error"
+				class="custommodal"
+			>
+				<div class="custommodal__body">
+					<img
+						class="custommodal__icon"
+						src="assets/images/customs/icon-error.svg"
+						alt="success"
+					/>
+
+					<p class="custommodal__txt">Xatolik yuz berdi, arizangiz yuborilmadi. Iltimos keyinroq urinib ko'ring</p>
 				</div>
 			</div>
 		</section>
@@ -817,5 +825,6 @@
 		<script src="assets/js/imgfix.min.js"></script>
 
 		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/feedback.js"></script>
 	</body>
 </html>
