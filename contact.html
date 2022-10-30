@@ -65,10 +65,7 @@
 							</a>
 							<ul class="nav">
 								<li>
-									<a
-										href="index.html" 
-										>Bosh Sahifa</a
-									>
+									<a href="index.html">Bosh Sahifa</a>
 								</li>
 								<li class="drnav">
 									<p>Faoliyat</p>
@@ -136,7 +133,7 @@
 												name="name"
 												type="text"
 												class="form-control"
-												id="name"
+												id="contact_name"
 												placeholder="Ism Familyangiz"
 												required=""
 											/>
@@ -145,10 +142,10 @@
 									<div class="col-lg-6 col-md-12 col-sm-12">
 										<fieldset>
 											<input
-												name="email"
-												type="email"
+												name="phone"
+												type="tel"
 												class="form-control"
-												id="email"
+												id="contact_phone"
 												placeholder="Telefon raqamingiz"
 												required=""
 											/>
@@ -160,7 +157,7 @@
 												name="message"
 												rows="6"
 												class="form-control"
-												id="message"
+												id="contact_message"
 												placeholder="Habaringiz qisqacha mazmuni"
 												required=""
 											></textarea>
@@ -169,9 +166,10 @@
 									<div class="col-lg-12">
 										<fieldset>
 											<button
-												type="submit"
+												type="button"
 												id="form-submit"
 												class="main-button"
+												onclick="passContact()"
 											>
 												Yuborish
 											</button>
@@ -185,6 +183,36 @@
 			</div>
 		</section>
 
+		<section class="modals">
+			<div
+				id="custommodal__success"
+				class="custommodal"
+			>
+				<div class="custommodal__body">
+					<img
+						class="custommodal__icon"
+						src="assets/images/customs/icon-success.svg"
+						alt="success"
+					/>
+
+					<p class="custommodal__txt">Arizangiz muvaffaqiyatli jo'natildi. Tez orada bizning mutahassis siz bilan bog'lanadi</p>
+				</div>
+			</div>
+			<div
+				id="custommodal__error"
+				class="custommodal"
+			>
+				<div class="custommodal__body">
+					<img
+						class="custommodal__icon"
+						src="assets/images/customs/icon-error.svg"
+						alt="success"
+					/>
+
+					<p class="custommodal__txt">Xatolik yuz berdi, arizangiz yuborilmadi. Iltimos keyinroq urinib ko'ring</p>
+				</div>
+			</div>
+		</section>
 		<footer>
 			<div class="container">
 				<!-- <div class="row">
@@ -228,5 +256,6 @@
 		<script src="assets/js/imgfix.min.js"></script>
 
 		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/feedback.js"></script>
 	</body>
 </html>
